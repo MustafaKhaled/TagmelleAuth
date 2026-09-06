@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tagmelle.app",
+    "sha256_cert_fingerprints": "04:50:59:8A:11:1E:DD:EB:09:AF:52:81:10:25:47:92:E7:1F:35:3A:A7:84:6C:8A:68:11:0C:A4:66:B5:19:16"
+  }
+}]
