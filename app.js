@@ -5,6 +5,12 @@ const indexRouter = require('./routes/index');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Tell browsers to always use HTTPS for this domain
+app.use((req, res, next) => {
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+  next();
+});
+
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
